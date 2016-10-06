@@ -1,0 +1,5 @@
+ within DFIG_Modelica.Interfaces;
+connector TONode "To Node"
+      extends Node;
+      annotation(defaultComponentName = "pin_n", Icon(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}}), graphics = {Polygon(points = {{-40, 100}, {-100, 40}, {-100, -40}, {-40, -100}, {40, -100}, {100, -40}, {100, 40}, {40, 100}, {-40, 100}}, lineColor = {0, 0, 255}, fillColor = {255, 255, 255}, fillPattern = FillPattern.Solid)}), Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}}), graphics = {Text(extent = {{0, 110}, {200, 50}}, textString = "%name"), Polygon(points = {{-10, 30}, {-30, 10}, {-30, -10}, {-10, -30}, {10, -30}, {30, -10}, {30, 10}, {10, 30}, {-10, 30}}, lineColor = {0, 0, 255}, fillColor = {255, 255, 255}, fillPattern = FillPattern.Solid)}), Terminal(Rectangle(extent = [-100, 100; 100, -100], style(color = 3))));
+    end TONode;

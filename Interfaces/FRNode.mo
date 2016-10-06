@@ -1,0 +1,5 @@
+ within DFIG_Modelica.Interfaces;
+ connector FRNode "Frome Node"
+      extends Node;
+      annotation(defaultComponentName = "pin", Icon(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}}), graphics = {Polygon(points = {{-40, 100}, {-100, 40}, {-100, -40}, {-40, -100}, {40, -100}, {100, -40}, {100, 40}, {40, 100}, {-40, 100}}, lineColor = {0, 0, 255}, fillColor = {0, 0, 255}, fillPattern = FillPattern.Solid)}), Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}}), graphics = {Text(extent = {{-200, 110}, {0, 50}}, lineColor = {0, 0, 255}, textString = "%name"), Polygon(points = {{-10, 30}, {-30, 10}, {-30, -10}, {-10, -30}, {10, -30}, {30, -10}, {30, 10}, {10, 30}, {-10, 30}}, lineColor = {0, 0, 255}, fillColor = {0, 0, 255}, fillPattern = FillPattern.Solid)}));
+    end FRNode;

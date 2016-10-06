@@ -1,0 +1,30 @@
+within DFIG_Modelica.Basic;
+model ThreePhaseShunt
+      extends Interfaces.ThreePhaseBranch;
+      parameter Real G11 = 1 "G11";
+      parameter Real G12 = 1;
+      parameter Real G13 = 1;
+      parameter Real G21 = 1;
+      parameter Real G22 = 1;
+      parameter Real G23 = 1;
+      parameter Real G31 = 1;
+      parameter Real G32 = 1;
+      parameter Real G33 = 1;
+      parameter Real B11 = 1 "G11";
+      parameter Real B12 = 1;
+      parameter Real B13 = 1;
+      parameter Real B21 = 1;
+      parameter Real B22 = 1;
+      parameter Real B23 = 1;
+      parameter Real B31 = 1;
+      parameter Real B32 = 1;
+      parameter Real B33 = 1;
+    equation
+      i1Re = G11 * v1Re + G12 * v2Re + G13 * v3Re - B11 * v1Im - B12 * v2Im - B13 * v3Im;
+      i2Re = G21 * v1Re + G22 * v2Re + G23 * v3Re - B21 * v1Im - B22 * v2Im - B23 * v3Im;
+      i3Re = G31 * v1Re + G32 * v2Re + G33 * v3Re - B31 * v1Im - B32 * v2Im - B33 * v3Im;
+      i1Im = B11 * v1Re + B12 * v2Re + B13 * v3Re + G11 * v1Im + G12 * v2Im + G13 * v3Im;
+      i2Im = B21 * v1Re + B22 * v2Re + B23 * v3Re + G21 * v1Im + G22 * v2Im + G23 * v3Im;
+      i3Im = B31 * v1Re + B32 * v2Re + B33 * v3Re + G31 * v1Im + G32 * v2Im + G33 * v3Im;
+      annotation(Icon(graphics = {Polygon(origin = {-85.0097, -3.34916}, points = {{-4.99029, 25.3492}, {-4.99029, -24.6508}, {3.00971, -20.6508}, {-4.99029, 25.3492}, {5.00971, -24.6508}, {-4.99029, 25.3492}}), Polygon(origin = {2.57103, -2.40055}, points = {{-4.57103, 28.4006}, {-6.57103, -27.5994}, {7.42897, -25.5994}, {5.42897, -25.5994}, {5.42897, -23.5994}, {-4.57103, 28.4006}}), Polygon(origin = {91.9976, -3.44855}, points = {{-1.99764, 29.4486}, {-3.99764, -28.5514}, {4.00236, -28.5514}, {-1.99764, 29.4486}})}, coordinateSystem(initialScale = 0.1)));
+    end ThreePhaseShunt;

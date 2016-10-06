@@ -1,0 +1,3 @@
+within DFIG_Modelica.Basic;
+package ThreePhaseVoltageSource
+end ThreePhaseVoltageSource;
